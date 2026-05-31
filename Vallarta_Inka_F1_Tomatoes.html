@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vallarta Inka F1 Tomatoes</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #fffdf9;
+      color: #2b1a0e;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem;
+      line-height: 1.7;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #b22222;
+      text-align: center;
+      margin-bottom: 0.3rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+      color: #b22222;
+      margin: 2rem 0 0.6rem;
+      border-bottom: 2px solid #e8c49a;
+      padding-bottom: 0.3rem;
+    }
+    h3 {
+      font-size: 1.1rem;
+      color: #7a3000;
+      margin: 1.2rem 0 0.4rem;
+    }
+    .hero {
+      text-align: center;
+      background: linear-gradient(135deg, #fff3e0, #fbe9d0);
+      border: 2px solid #e8c49a;
+      border-radius: 10px;
+      padding: 2rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .hero .emoji-header {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+    .hero .subtitle {
+      font-size: 1.05rem;
+      color: #7a3000;
+      margin-top: 0.4rem;
+    }
+    p { margin-bottom: 0.9rem; }
+    ul { margin: 0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+
+    .virus-list {
+      background: #fff0f0;
+      border-left: 4px solid #c0392b;
+      border-radius: 4px;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+    }
+    .virus-list li { list-style: none; margin-left: 0; }
+
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.97rem;
+    }
+    .specs-table th, .specs-table td {
+      padding: 0.55rem 0.8rem;
+      border: 1px solid #e0cbb0;
+      text-align: left;
+    }
+    .specs-table th {
+      background: #f5e6cc;
+      font-weight: bold;
+      color: #7a3000;
+      width: 35%;
+    }
+    .specs-table tr:nth-child(even) td { background: #fffaf3; }
+
+    .features {
+      background: #f0faf0;
+      border: 1px solid #a8d5a2;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+    }
+    .features li { list-style: none; margin-left: 0; }
+
+    .resistance-section { margin: 0.8rem 0; }
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin: 1.2rem 0;
+    }
+    @media (max-width: 560px) {
+      .options-grid { grid-template-columns: 1fr; }
+    }
+    .option-card {
+      border: 2px solid #e8c49a;
+      border-radius: 10px;
+      padding: 1.2rem;
+      background: #fffdf5;
+    }
+    .option-card h3 {
+      font-size: 1.05rem;
+      background: #b22222;
+      color: white;
+      margin: -1.2rem -1.2rem 1rem -1.2rem;
+      padding: 0.6rem 1rem;
+      border-radius: 8px 8px 0 0;
+    }
+    .option-card .price {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #b22222;
+      margin: 0.5rem 0;
+    }
+    .option-card li { list-style: none; margin-left: 0; }
+
+    .cta {
+      background: linear-gradient(135deg, #b22222, #8b1a1a);
+      color: white;
+      text-align: center;
+      border-radius: 10px;
+      padding: 1.8rem 1.5rem;
+      margin: 2rem 0 1rem;
+    }
+    .cta h2 { color: white; border: none; margin-top: 0; }
+    .cta a {
+      color: #ffd580;
+      font-weight: bold;
+      font-size: 1.1rem;
+      word-break: break-all;
+    }
+    .cta p { margin-bottom: 0.5rem; }
+
+    .footer-tagline {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      color: #b22222;
+      font-style: italic;
+    }
+
+    .note {
+      background: #fff8e1;
+      border-left: 4px solid #f0a500;
+      padding: 0.8rem 1rem;
+      border-radius: 4px;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="emoji-header">🍅</div>
+    <h1>Attention Puerto Vallarta Tomato Growers!</h1>
+    <p class="subtitle">Advanced virus-resistant Roma tomato seeds &amp; transplants — now available locally</p>
+  </div>
+
+  <p>If you've tried growing tomatoes in Puerto Vallarta for any length of time, you've probably discovered the same frustrating reality: <strong>tomato viruses are one of the biggest challenges facing growers in our region.</strong></p>
+
+  <p>Over the last two years, I have lost a significant portion of my tomato plants to viral diseases that are widespread throughout the Bay of Banderas area.</p>
+
+  <h2>The Problem: Destructive Local Viruses</h2>
+  <ul class="virus-list">
+    <li>🦠 Tomato Brown Rugose Fruit Virus (ToBRFV)</li>
+    <li>🦠 Tomato Spotted Wilt Virus (TSWV)</li>
+    <li>🦠 Tomato Mosaic Virus (ToMV)</li>
+  </ul>
+
+  <p>For years, growers had very few options when these viruses appeared. However, beginning around 2023, new tomato hybrids were developed with genetic resistance specifically targeting these devastating diseases.</p>
+
+  <div class="note">
+    <strong>The challenge:</strong> These advanced commercial varieties have generally been available only to large-scale growers, typically sold in seed lots of 1,000 to 5,000 seeds — making them unavailable, impractical, and expensive for home gardeners and small market gardeners. And transplant-ready plants have never been available locally.
+  </div>
+
+  <p>I have arranged to purchase a commercial quantity of one of these advanced hybrids and have received authorization from the supplier to offer my excess seeds locally to individuals and small growers.</p>
+
+  <h2>Introducing INKA F1 Hybrid Roma Tomato</h2>
+  <p><em>Jitomate Híbrido Roma Indeterminado — Solanum lycopersicum</em><br>
+  Produced by Böden Seed / Cheng Tin S.A. de C.V.</p>
+
+  <h3>Variety Specifications</h3>
+  <table class="specs-table">
+    <tr><th>Season</th><td>Extreme heat</td></tr>
+    <tr><th>Maturity</th><td>Early — approximately 70 days (ddt)</td></tr>
+    <tr><th>Fruit size</th><td>XL</td></tr>
+    <tr><th>Fruit weight</th><td>210–230 grams (7.4–8.1 oz each)</td></tr>
+    <tr><th>Yield</th><td>280–300 tons/hectare</td></tr>
+    <tr><th>Growth habit</th><td>Indeterminate</td></tr>
+    <tr><th>Flowers per cluster</th><td>~12 flowers, ~10 fruits</td></tr>
+  </table>
+
+  <h3>Manufacturer's Description</h3>
+  <p>Extremely vigorous and fast-growing plant with excellent foliage coverage, ideal for long production cycles. Strong root system with high resistance to nematodes. Short internodes with an average of 12 flowers and 10 fruits per cluster.</p>
+  <p>This hybrid is especially suited to hot climates, with genetic potential that allows it to thrive under high temperatures. Produces extra-large, firm fruit with exceptionally thick walls, intense red color, excellent flavor, and excellent shelf life.</p>
+
+  <h3>Key Features</h3>
+  <div class="features">
+    <ul>
+      <li>✅ Bred for hot climates and extreme temperatures</li>
+      <li>✅ Early maturity (approximately 70 days)</li>
+      <li>✅ XL fruits weighing 210–230 grams (7.4–8.1 oz each)</li>
+      <li>✅ Thick-walled, firm fruit</li>
+      <li>✅ Excellent flavor</li>
+      <li>✅ Vigorous growth</li>
+      <li>✅ Excellent productivity</li>
+    </ul>
+  </div>
+
+  <h2>Disease Resistance</h2>
+
+  <div class="resistance-section">
+    <h3>High Resistance</h3>
+    <ul>
+      <li>Tomato Spotted Wilt Virus (TSWV)</li>
+      <li>Tomato Mosaic Virus (ToMV)</li>
+      <li>Tomato Yellow Leaf Curl Virus (TYLCV)</li>
+      <li>Fusarium Wilt (Races 1, 2, &amp; 3)</li>
+      <li>Root-knot Nematodes</li>
+      <li>Verticillium Wilt</li>
+    </ul>
+  </div>
+
+  <div class="resistance-section">
+    <h3>Intermediate Resistance</h3>
+    <ul>
+      <li>Tomato Brown Rugose Fruit Virus (ToBRFV)</li>
+      <li>Fusarium Crown &amp; Root Rot</li>
+      <li>Leaf Mold</li>
+    </ul>
+  </div>
+
+  <h2>What I'm Offering</h2>
+
+  <div class="options-grid">
+    <div class="option-card">
+      <h3>Option A — Seeds</h3>
+      <div class="price">$260 MXN</div>
+      <p><strong>100 seeds per packet</strong></p>
+      <p>Perfect for:</p>
+      <ul>
+        <li>🌱 Home gardeners</li>
+        <li>🌱 Market gardeners</li>
+        <li>🌱 Small commercial growers</li>
+      </ul>
+      <p style="margin-top:0.8rem; font-size:0.9rem;">Cash payment upon local pickup. Limited quantity — reserve now.</p>
+    </div>
+
+    <div class="option-card">
+      <h3>Option B — Transplants</h3>
+      <div class="price">$100 MXN/plant</div>
+      <p><strong>Minimum order: 5 plants</strong></p>
+      <p>Don't want to start seeds yourself? Reserve healthy transplant-ready seedlings, grown over two months to transplant size.</p>
+      <p style="margin-top:0.8rem;"><strong>Available:</strong> Beginning of October, after the rainy season ends.</p>
+      <p style="font-size:0.9rem;">Cash payment due at pickup. Reserve now so I can schedule your seeds' 60-day growth period.</p>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>Availability note:</strong> These seeds come from a commercial lot and quantities are limited. Reservations are handled on a first-come, first-served basis.
+  </div>
+
+  <div class="cta">
+    <h2>Reserve Now</h2>
+    <p>Send an email for availability, reservations, or questions:</p>
+    <a href="mailto:Vallarta_Inka_F1_Tomatoes@use.Startmail.com">Vallarta_Inka_F1_Tomatoes@use.Startmail.com</a>
+    <p style="margin-top:1rem; font-size:0.9rem;">Include the quantity of seeds or number of transplant plants you'd like to reserve.</p>
+  </div>
+
+  <p class="footer-tagline">🍅 Grow the tomatoes you wish you had planted last season. 🍅</p>
+
+</body>
+</html>
