@@ -1,2 +1,0 @@
-# Inka-Tomatoes
-Advert
