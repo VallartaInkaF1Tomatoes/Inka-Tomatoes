@@ -1,627 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="INKA F1 hybrid Roma tomato seeds and transplants with advanced disease resistance, available locally in Puerto Vallarta and Bahía de Banderas." />
-  <title>INKA F1 Roma Tomatoes | Puerto Vallarta</title>
-
-  <style>
-    :root {
-      --red: #a82020;
-      --red-dark: #751313;
-      --rust: #8a3a10;
-      --cream: #fff8ec;
-      --paper: #fffdf8;
-      --gold: #e8bd72;
-      --green: #3f6d35;
-      --text: #2b1a0e;
-      --muted: #6f5a45;
-      --line: #ead5b8;
-      --shadow: 0 10px 28px rgba(82, 38, 10, .12);
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      background: linear-gradient(180deg, #fffaf1 0%, #fffdf8 40%, #fff7ea 100%);
-      color: var(--text);
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.65;
-    }
-
-    .page {
-      max-width: 980px;
-      margin: 0 auto;
-      background: var(--paper);
-      box-shadow: 0 0 60px rgba(80, 45, 20, .13);
-    }
-
-    .hero {
-      position: relative;
-      min-height: 560px;
-      background-image:
-        linear-gradient(180deg, rgba(0,0,0,.12) 0%, rgba(0,0,0,.14) 40%, rgba(0,0,0,.72) 100%),
-        url("hero-tomatoes.jpg");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: flex-end;
-      padding: 2rem;
-      color: white;
-    }
-
-    .brand-badge {
-      position: absolute;
-      top: 1.4rem;
-      right: 1.4rem;
-      background: rgba(255, 253, 248, .92);
-      color: var(--red);
-      border: 2px solid rgba(255,255,255,.85);
-      border-radius: 999px;
-      padding: .7rem 1.05rem;
-      text-align: center;
-      box-shadow: var(--shadow);
-      font-weight: bold;
-      line-height: 1.1;
-      letter-spacing: .02em;
-    }
-
-    .brand-badge span {
-      display: block;
-      color: var(--rust);
-      font-size: .72rem;
-      font-weight: normal;
-      letter-spacing: 0;
-      margin-top: .15rem;
-    }
-
-    .hero-copy {
-      max-width: 620px;
-      background: rgba(50, 18, 8, .66);
-      border-left: 5px solid var(--gold);
-      border-radius: 12px;
-      padding: 1rem 1.15rem;
-      backdrop-filter: blur(2px);
-    }
-
-    .hero-copy h1 {
-      margin: 0 0 .5rem;
-      font-size: clamp(1.55rem, 4.2vw, 3.05rem);
-      line-height: 1.05;
-      letter-spacing: -.035em;
-    }
-
-    .hero-copy p {
-      margin: 0;
-      font-size: clamp(.95rem, 1.55vw, 1.18rem);
-      color: #ffe7b2;
-      font-weight: bold;
-    }
-
-    .caption {
-      padding: .8rem 2rem 0;
-      color: var(--muted);
-      font-size: .92rem;
-      text-align: center;
-      font-style: italic;
-    }
-
-    main { padding: 2rem; }
-
-    section { margin: 2.45rem 0; }
-
-    h2 {
-      color: var(--red);
-      font-size: 1.65rem;
-      margin: 0 0 .75rem;
-      line-height: 1.2;
-      border-bottom: 2px solid var(--line);
-      padding-bottom: .35rem;
-    }
-
-    h3 {
-      color: var(--rust);
-      margin: 1rem 0 .45rem;
-      font-size: 1.18rem;
-    }
-
-    p { margin: 0 0 .95rem; }
-
-    .section-icon {
-      display: inline-block;
-      margin-right: .45rem;
-      font-size: .95em;
-      vertical-align: -.05em;
-    }
-
-    .callout {
-      background: linear-gradient(135deg, #fff3d7, #fffaf0);
-      border: 2px solid var(--gold);
-      border-radius: 16px;
-      padding: 1.3rem 1.4rem;
-      box-shadow: var(--shadow);
-    }
-
-    .callout h2,
-    .cta h2 {
-      border: none;
-      margin-bottom: .4rem;
-      padding: 0;
-    }
-
-    .story-grid {
-      display: grid;
-      grid-template-columns: 1.45fr .85fr;
-      gap: 1.4rem;
-      align-items: start;
-    }
-
-    .story-text {
-      align-self: center;
-      padding-top: 1.2rem;
-      padding-bottom: 1.2rem;
-    }
-
-    .image-card {
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: .7rem;
-      box-shadow: var(--shadow);
-    }
-
-    .image-card img {
-      width: 100%;
-      display: block;
-      border-radius: 11px;
-    }
-
-    .image-card p {
-      margin: .55rem .2rem .15rem;
-      font-size: .88rem;
-      color: var(--muted);
-      text-align: center;
-      font-style: italic;
-      line-height: 1.35;
-    }
-
-    .story-grid .image-card,
-    .technical .image-card { height: 100%; }
-
-    .story-grid .image-card img,
-    .technical .image-card img {
-      height: calc(100% - 3rem);
-      object-fit: cover;
-      object-position: center;
-    }
-
-    .virus-list,
-    .features {
-      list-style: none;
-      margin: 1rem 0 0;
-      padding: 0;
-      display: grid;
-      gap: .55rem;
-    }
-
-    .virus-list li {
-      background: #fff0f0;
-      border-left: 5px solid #c0392b;
-      padding: .72rem .9rem;
-      border-radius: 9px;
-    }
-
-    .availability {
-      background: #fff8e1;
-      border-left: 5px solid #f0a500;
-      border-radius: 12px;
-      padding: 1rem 1.1rem;
-    }
-
-    .spec-card {
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      margin-top: 1rem;
-    }
-
-    .spec-card table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    .spec-card th,
-    .spec-card td {
-      padding: .85rem 1rem;
-      border-bottom: 1px solid #f0dfc7;
-      text-align: left;
-      vertical-align: top;
-    }
-
-    .spec-card th {
-      width: 34%;
-      color: var(--rust);
-      background: #f5e0bd;
-      font-weight: bold;
-    }
-
-    .spec-card tr:last-child th,
-    .spec-card tr:last-child td { border-bottom: none; }
-
-    .technical {
-      display: grid;
-      grid-template-columns: .92fr 1.25fr;
-      gap: 1.3rem;
-      align-items: start;
-    }
-
-    .technical-text {
-      background: #fffaf1;
-      border-left: 5px solid var(--gold);
-      border-radius: 12px;
-      padding: 1.1rem 1.2rem;
-    }
-
-    .features { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-
-    .features li {
-      background: #f1fbef;
-      border: 1px solid #b9dcb4;
-      border-radius: 10px;
-      padding: .7rem .85rem;
-    }
-
-    .resistance-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.2rem;
-    }
-
-    .resistance-box {
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 1rem 1.2rem;
-      box-shadow: var(--shadow);
-    }
-
-    .resistance-box h3 { margin-top: 0; }
-
-    .resistance-box ul {
-      margin: .5rem 0 0 1.1rem;
-      padding: 0;
-    }
-
-    .about {
-      background: #f3fbff;
-      border-left: 5px solid #5dade2;
-      border-radius: 14px;
-      padding: 1.2rem 1.3rem;
-    }
-
-    .offer-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.55rem;
-      margin-top: 1.45rem;
-    }
-
-    .offer-card {
-      background: #fffdf5;
-      border: 2px solid var(--gold);
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 14px 34px rgba(82, 38, 10, .18);
-      display: flex;
-      flex-direction: column;
-      transform: scale(1.015);
-    }
-
-    .offer-card header {
-      background: linear-gradient(135deg, var(--red), var(--red-dark));
-      color: white;
-      padding: 1.1rem 1.25rem;
-    }
-
-    .offer-card h3 {
-      color: white;
-      margin: 0;
-      font-size: 1.35rem;
-    }
-
-    .offer-body {
-      padding: 1.35rem;
-      flex: 1;
-    }
-
-    .price {
-      font-size: 2.55rem;
-      color: var(--red);
-      font-weight: bold;
-      line-height: 1;
-      margin: .3rem 0 .25rem;
-    }
-
-    .price small {
-      font-size: .9rem;
-      color: var(--muted);
-      font-weight: normal;
-    }
-
-    .best-for {
-      background: #fff5df;
-      border-radius: 10px;
-      padding: .8rem .9rem;
-      margin: 1rem 0;
-    }
-
-    .best-for ul {
-      margin: .3rem 0 0 1.1rem;
-      padding: 0;
-    }
-
-    .decision-line {
-      color: var(--green);
-      font-weight: bold;
-      margin-top: auto;
-    }
-
-    .cta {
-      background: linear-gradient(135deg, var(--red), var(--red-dark));
-      color: white;
-      text-align: center;
-      border-radius: 18px;
-      padding: 2rem 1.5rem;
-      box-shadow: var(--shadow);
-    }
-
-    .cta h2 {
-      color: white;
-      font-size: 2rem;
-    }
-
-    .cta a {
-      color: #ffd580;
-      font-size: 1.15rem;
-      font-weight: bold;
-      word-break: break-all;
-    }
-
-    .footer-tagline {
-      text-align: center;
-      font-size: 1.35rem;
-      color: var(--red);
-      font-style: italic;
-      margin: 2rem 0 .5rem;
-    }
-
-    .source-note {
-      text-align: center;
-      color: var(--muted);
-      font-size: .85rem;
-      margin: 1rem 0 0;
-    }
-
-    @media (max-width: 720px) {
-      .hero {
-        min-height: 480px;
-        padding: 1rem;
-      }
-
-      main { padding: 1.2rem; }
-
-      .story-grid,
-      .technical,
-      .resistance-grid,
-      .offer-grid,
-      .features { grid-template-columns: 1fr; }
-
-      .story-grid .image-card,
-      .technical .image-card { height: auto; }
-
-      .story-grid .image-card img,
-      .technical .image-card img { height: auto; }
-
-      .story-text {
-        padding-top: 0;
-        padding-bottom: 0;
-      }
-
-      .offer-card { transform: none; }
-
-      .brand-badge {
-        top: .8rem;
-        right: .8rem;
-        font-size: .85rem;
-      }
-
-      .hero-copy { padding: 1.1rem; }
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>INKA F1 Tomatoes Puerto Vallarta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--green:#063b18;--leaf:#4f8429;--red:#b31310;--cream:#fffdf4;--paper:#fbf7e9;--line:#678b3a;--gold:#e3c176;--ink:#111}
+*{box-sizing:border-box}html,body{margin:0}body{background:#efe8d7;font-family:Inter,Arial,sans-serif;color:#111}.poster{width:min(1120px,98vw);margin:0 auto;background:radial-gradient(circle at 32% 12%,#fffef8 0,#fffaf0 44%,#f8f1de 100%);box-shadow:0 18px 45px rgba(0,0,0,.12);overflow:hidden;position:relative}.inner{padding:38px 48px 0}.hero{height:326px;position:relative}.hero-img{position:absolute;right:-48px;top:-38px;width:690px;height:360px;background-image:linear-gradient(90deg,rgba(255,253,244,1) 0%,rgba(255,253,244,.92) 12%,rgba(255,253,244,.45) 31%,rgba(255,253,244,0) 52%),linear-gradient(180deg,rgba(255,253,244,0) 76%,rgba(255,253,244,1) 100%),url('assets/hero-crop.png');background-size:cover;background-position:center top}.headline{position:relative;z-index:2;width:520px}.headline h1{font-family:'Libre Baskerville',Georgia,serif;font-weight:700;color:var(--green);font-size:47px;line-height:1.1;margin:0 0 18px;letter-spacing:-1.2px}.headline h2{font-family:'Libre Baskerville',Georgia,serif;font-size:39px;line-height:1;color:var(--red);margin:0;font-weight:700}.benefits{margin-top:-8px;display:grid;grid-template-columns:1.28fr .96fr 1.18fr;column-gap:24px;row-gap:12px;align-items:start}.benefit{display:grid;grid-template-columns:82px 1fr;gap:10px;min-height:82px}.benefit .ico{width:76px;height:76px;object-fit:contain;align-self:center}.benefit.available .ico{width:82px;height:82px;margin-left:0;margin-top:0;object-fit:contain}.benefit .emoji{font-size:58px;line-height:1;text-align:center;color:#eca900;text-shadow:0 1px 0 #fff}.benefit.shield .emoji{font-size:50px;color:#6994a6}.script{font-family:Caveat,cursive;font-weight:700;color:var(--green);font-size:31px;line-height:.92}.benefit p{font-size:16px;line-height:1.35;margin:6px 0 0}.benefit.hot,.benefit.disease{grid-template-columns:70px 1fr}.benefit.disease{grid-template-columns:62px 1fr}.benefit.disease .emoji{font-size:47px}.benefit.available{grid-column:1/3;grid-row:2;grid-template-columns:86px 1fr;margin-top:-4px}.availability{font-family:Caveat,cursive;font-weight:700;font-size:27px;line-height:.96;color:#111;margin-top:6px}.cta-row{grid-column:3/4;grid-row:2;align-self:center;justify-self:end;margin-top:0}.tag-wrap{position:relative;display:inline-flex;align-items:center;isolation:isolate}.string{position:absolute;left:0;top:50%;width:118px;height:50px;transform:translateY(-50%);pointer-events:none;z-index:4;background-repeat:no-repeat;background-size:100% 100%;filter:drop-shadow(0 2px 2px rgba(0,0,0,.22));background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 118 50'%3E%3Cpath d='M110 25 C90 25 82 7 44 7 C20 7 7 16 7 25 C7 34 20 43 44 43 C82 43 90 25 110 25' fill='none' stroke='%23157528' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M105 25 L116 25' fill='none' stroke='%23157528' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E")}.tag{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:linear-gradient(#d21919,#a80606);color:#fff;font-family:Caveat,cursive;font-weight:700;border-radius:7px;padding:13px 24px 13px 38px;min-width:305px;filter:drop-shadow(0 5px 8px rgba(0,0,0,.36));box-shadow:inset 0 1px 0 rgba(255,255,255,.23),0 2px 5px rgba(0,0,0,.20);position:relative;z-index:5;border:1px solid rgba(80,0,0,.22);font-size:25px;line-height:1;white-space:nowrap;clip-path:polygon(17px 0,100% 0,100% 100%,17px 100%,0 50%);margin-left:88px;text-decoration:none}.tag:after{content:"";position:absolute;left:22px;top:50%;width:9px;height:9px;border-radius:50%;background:#d6b24b;border:2px solid #8d741f;transform:translateY(-50%);box-shadow:0 1px 2px rgba(0,0,0,.35) inset,0 0 1px rgba(255,255,255,.9)}.tag .mail{font-family:Inter,Arial,sans-serif;font-size:18px}.tag.small{min-width:196px;font-size:23px;padding:11px 20px 11px 34px;margin-left:72px}.tag-wrap.small .string{width:98px;height:40px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 98 40'%3E%3Cpath d='M91 20 C74 20 67 6 36 6 C17 6 6 13 6 20 C6 27 17 34 36 34 C67 34 74 20 91 20' fill='none' stroke='%23157528' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M86 20 L96 20' fill='none' stroke='%23157528' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E")}.tag.bottom{min-width:248px;font-size:21px;padding-top:11px;padding-bottom:11px;margin-left:74px}.tag-wrap.bottom .string{width:102px;height:42px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 102 42'%3E%3Cpath d='M95 21 C77 21 70 6 37 6 C18 6 6 13 6 21 C6 29 18 36 37 36 C70 36 77 21 95 21' fill='none' stroke='%23157528' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M90 21 L100 21' fill='none' stroke='%23157528' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E")}
+.brush{height:18px;margin:10px 0 9px;position:relative}.brush:before{content:"";position:absolute;left:22px;right:22px;top:7px;height:8px;background:linear-gradient(90deg,transparent,var(--line) 9%,#416d23 52%,var(--line) 91%,transparent);clip-path:polygon(0 65%,7% 45%,17% 58%,28% 42%,40% 55%,54% 38%,69% 58%,84% 43%,100% 62%,100% 78%,0 84%);opacity:.85}.section-title{font-family:'Libre Baskerville',Georgia,serif;color:var(--green);text-align:center;font-size:31px;font-weight:700;margin:3px 0 13px}.section-title .leaf{color:#69a12a;font-family:Caveat,cursive;margin:0 14px}.options{display:grid;grid-template-columns:1fr 1fr;gap:34px}.option{border:1px solid #dfc584;border-radius:7px;background:linear-gradient(#fff9dc 0 34%,rgba(255,255,255,.8) 34% 100%);min-height:260px;position:relative;padding:19px 24px 80px;box-shadow:0 4px 12px rgba(0,0,0,.08)}.option img.prod{position:absolute;right:34px;top:10px;width:178px;height:86px;object-fit:contain}.option img.pot{width:130px;height:93px;right:30px;top:8px}.option .op{font-family:'Libre Baskerville',Georgia,serif;color:var(--green);font-weight:700;font-size:16px}.option h3{font-family:'Libre Baskerville',Georgia,serif;color:var(--green);font-size:31px;line-height:.9;margin:2px 0 22px}.option p{font-size:16px;line-height:1.3;margin:0 0 6px}.price{font-family:'Libre Baskerville',Georgia,serif;color:var(--red);font-weight:700;font-size:26px}.price small{font-size:16px}.checks{font-size:15px;line-height:1.55;margin-top:12px}.checks span{display:block}.checks b{color:#11661d}.option .tag-wrap{position:absolute;bottom:19px;left:50%;transform:translateX(-47%)}.pickup{font-family:Caveat,cursive;font-size:29px;text-align:center;margin:11px 0 10px;color:#111}.pickup .pin{font-family:Inter,Arial;font-size:30px;color:#bd201b;margin-right:18px}.cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}.card{border:1px solid #dfcda2;border-radius:7px;background:rgba(255,255,255,.6);padding:10px 13px 11px;min-height:178px}.card-head{display:grid;grid-template-columns:37px 1fr;align-items:center;gap:4px;margin-bottom:4px}.card .card-ico{font-size:29px;text-align:center;line-height:1;color:#e5312a}.card .card-ico.person{color:#1473b8;font-size:26px}.card .card-ico.shield{font-size:26px;color:#6a9aad;transform:translateY(-2px)}.card h4{font-family:'Libre Baskerville',Georgia,serif;color:var(--green);font-size:21px;line-height:.95;margin:0;font-weight:700}.card img{width:100%;height:75px;object-fit:cover;border-radius:4px;display:block}.card p{font-size:13px;line-height:1.22;margin:8px 0 0}.experience{margin:18px 0 10px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px}.experience:before,.experience:after{content:"";height:8px;background:linear-gradient(90deg,transparent,#6d8f43 15%,#477129 85%,transparent);clip-path:polygon(0 60%,12% 45%,29% 62%,48% 43%,67% 58%,87% 39%,100% 58%,100% 73%,0 78%)}.experience h3{font-family:Caveat,cursive;font-size:32px;line-height:1;margin:0;color:#073717;white-space:nowrap}.gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.gal img{width:100%;height:64px;object-fit:cover;border-radius:4px;display:block}.gal div{font-family:Caveat,cursive;font-size:16px;text-align:center;margin-top:3px}.bottom-cta{display:grid;grid-template-columns:260px 1fr 330px;align-items:center;margin:18px 0 12px;gap:18px}.ready{display:grid;grid-template-columns:62px 1fr;align-items:center}.ready img{width:60px}.ready div{font-family:Caveat,cursive;color:var(--red);font-size:36px;line-height:.84;font-weight:700}.lets{font-family:Caveat,cursive;color:var(--green);font-size:34px;line-height:1;text-align:center}.footer{height:43px;background:#064015;color:#fff;display:grid;grid-template-columns:1.1fr .8fr 1.3fr;align-items:center;padding:0 30px;font-size:13px;gap:20px}.footer span{border-left:1px solid rgba(255,255,255,.5);padding-left:22px}.footer img{width:22px;vertical-align:middle;margin-right:8px}
+@media(max-width:760px){.poster{width:100%}.inner{padding:24px 20px 0}.hero{height:auto;padding-bottom:235px}.hero-img{right:-20px;width:100%;height:300px;top:150px}.headline{width:100%}.headline h1{font-size:34px}.headline h2{font-size:29px}.benefits,.options,.cards,.gallery,.bottom-cta,.footer{grid-template-columns:1fr}.benefit.available,.cta-row{grid-column:auto}.tag{min-width:240px;font-size:21px}.tag-wrap{padding-left:70px}.experience{display:block;text-align:center}.experience:before,.experience:after{display:none}.experience h3{white-space:normal}.footer{height:auto;padding:12px 20px}.footer span{border:0;padding:0}.option .tag-wrap{left:55%}.bottom-cta{justify-items:center}.lets{text-align:center}}
+
+/* Image-based approved tag artwork */
+.tag-wrap.imgtag{position:relative;display:inline-block;line-height:0;isolation:auto;padding:0;filter:none;transform:none;}
+.tag-wrap.imgtag a{display:block;line-height:0;text-decoration:none;}
+.tagpic{display:block;height:auto;filter:drop-shadow(0 2px 2px rgba(0,0,0,.10));}
+.cta-row .tag-wrap.imgtag{margin:0;}
+.tagpic-all{width:470px;max-width:100%;}
+.option .tag-wrap.imgtag{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);}
+.tagpic-seeds{width:258px;}
+.tagpic-trans{width:292px;}
+.bottom-cta .tag-wrap.imgtag{justify-self:start;}
+.tagpic-bottom{width:410px;}
+@media(max-width:760px){.tagpic-all{width:310px}.tagpic-seeds{width:230px}.tagpic-trans{width:250px}.tagpic-bottom{width:310px}.option .tag-wrap.imgtag{left:50%;}}
+</style>
 </head>
-
 <body>
-  <div class="page">
-
-    <header class="hero">
-      <div class="brand-badge">🍅 INKA F1<span>Roma Tomato<br>Puerto Vallarta</span></div>
-      <div class="hero-copy">
-        <h1>Want to Grow Beautiful, Healthy, Flavorful Tomatoes in Puerto Vallarta?</h1>
-        <p>Discover INKA F1—a remarkable Roma tomato bred for hot climates that combines exceptional flavor, abundant harvests, and resistance to several major tomato diseases.</p>
+<main class="poster">
+  <div class="inner">
+    <section class="hero">
+      <div class="hero-img"></div>
+      <div class="headline">
+        <h1>Want to Grow<br>Beautiful, Healthy,<br>Flavorful Tomatoes<br>in Puerto Vallarta?</h1>
+        <h2>Discover INKA F1</h2>
       </div>
-    </header>
+    </section>
 
-    <p class="caption">Commercial-quality INKA F1 Roma tomatoes grown from the same hybrid seed offered on this page.</p>
+    <section class="benefits">
+      <div class="benefit"><img class="ico" src="assets/tomato-icon.png" alt=""><div><div class="script">Exceptional<br>Flavor</div><p>Rich, well-balanced flavor<br>in every bite.</p></div></div>
+      <div class="benefit hot"><div class="emoji">☀</div><div><div class="script">Bred for<br>Hot Climates</div><p>Thrives in heat and<br>humidity where other<br>tomatoes struggle.</p></div></div>
+      <div class="benefit disease shield"><div class="emoji">🛡</div><div><div class="script">Disease-Resistant</div><p>Strong genetic resistance<br>to several major tomato diseases.</p></div></div>
+      <div class="benefit available"><img class="ico" src="assets/leafy-plant-icon.png" alt=""><div><div class="script">Abundant Harvests</div><div class="availability">Available locally in practical quantities<br>for home gardeners and small growers.</div></div></div>
+      <div class="cta-row"><span class="tag-wrap imgtag all"><a href="mailto:Vallarta_Inka_F1_Tomatoes@use.Startmail.com?subject=Reserve%20INKA%20F1%20Seeds%20or%20Plants&body=Hello%2C%0A%0AI%20would%20like%20to%20reserve%3A%0A%0A%E2%98%90%20INKA%20F1%20Seeds%0A%E2%98%90%20INKA%20F1%20Transplants%0A%0AQuantity%3A%0A%0AName%3A%0APhone/WhatsApp%23%3A%0A%0AThank%20you." aria-label="Reserve INKA F1 seeds or plants"><img class="tagpic tagpic-all" src="assets/tag-reserve-all.png" alt="Reserve INKA F1 seeds or plants"></a></span></div>
+    </section>
 
-    <main>
-      <section class="callout">
-        <h2><span class="section-icon">📍</span>First Local Availability</h2>
-        <p>For the first time, commercial INKA F1 hybrid seeds and transplants will be available locally for home gardeners, container growers, market gardeners, and small growers in the Bay of Banderas region.</p>
-        <p><strong>Selected for the hot climate of Puerto Vallarta and Bahía de Banderas.</strong></p>
-      </section>
+    <div class="brush"></div>
+    <h2 class="section-title"><span class="leaf">☘</span>Choose the Best Option for You<span class="leaf">☘</span></h2>
 
-      <section class="story-grid">
-        <div class="story-text">
-          <h2><span class="section-icon">🍅</span>Why I Chose to Grow INKA F1</h2>
-          <p>For years I grew tomatoes in Puerto Vallarta, but like many local gardeners, I was always searching for a variety that could consistently produce beautiful, flavorful tomatoes under our local growing conditions.</p>
-          <p>That search led me to INKA F1—a remarkable new hybrid developed specifically for hot climates that combines exceptional flavor, vigorous growth, abundant harvests, and resistance to several major tomato diseases.</p>
-          <p><strong>It quickly became the variety I wanted to grow—and to make available to other local gardeners and small growers.</strong></p>
-        </div>
-        <aside class="image-card">
-          <img src="seed-package.jpg" alt="INKA F1 commercial seed package">
-          <p>Commercial INKA F1 seed package from Böden Seed / Cheng Tin S.A. de C.V.</p>
-        </aside>
-      </section>
+    <section class="options">
+      <article class="option"><img class="prod" src="assets/seed-pile.jpg" alt=""><div class="op">Option 1</div><h3>Seeds</h3><p>100 INKA F1 seeds per packet</p><div class="price">260 MXN</div><div class="checks"><span><b>✓</b> F1 Hybrid &nbsp; • &nbsp; High germination &nbsp; • &nbsp; Premium quality</span><span><b>✓</b> Perfect for home gardeners and small growers</span></div><span class="tag-wrap imgtag seeds"><a href="mailto:Vallarta_Inka_F1_Tomatoes@use.Startmail.com?subject=Reserve%20INKA%20F1%20Seeds&body=Hello%2C%0A%0AI%20would%20like%20to%20reserve%20INKA%20F1%20seeds.%0A%0AName%3A%0APhone/WhatsApp%23%3A%0ANumber%20of%20100-seed%20packets%3A%0A%0AThank%20you." aria-label="Reserve INKA F1 seeds"><img class="tagpic tagpic-seeds" src="assets/tag-reserve-seeds.png" alt="Reserve INKA F1 seeds"></a></span></article>
+      <article class="option"><img class="prod pot" src="assets/transplant-pot.jpg" alt=""><div class="op">Option 2</div><h3>Transplants</h3><p>Healthy, well-established INKA F1 transplants</p><div class="price">100 MXN <small>per plant</small></div><p>Minimum order: 5 plants</p><div class="checks"><span><b>✓</b> Strong, vigorous plants ready to thrive</span><span><b>✓</b> Perfect for home gardeners and containers</span></div><span class="tag-wrap imgtag trans"><a href="mailto:Vallarta_Inka_F1_Tomatoes@use.Startmail.com?subject=Reserve%20INKA%20F1%20Transplants&body=Hello%2C%0A%0AI%20would%20like%20to%20reserve%20INKA%20F1%20transplants.%0A%0AName%3A%0APhone/WhatsApp%23%3A%0ANumber%20of%20plants%20%28minimum%205%29%3A%0A%0AThank%20you." aria-label="Reserve INKA F1 transplants"><img class="tagpic tagpic-trans" src="assets/tag-reserve-transplants.png" alt="Reserve INKA F1 transplants"></a></span></article>
+    </section>
 
-      <section>
-        <h2><span class="section-icon">🦠</span>The Problem: Destructive Local Viruses</h2>
-        <ul class="virus-list">
-          <li>🦠 Tomato Brown Rugose Fruit Virus (ToBRFV)</li>
-          <li>🦠 Tomato Spotted Wilt Virus (TSWV)</li>
-          <li>🦠 Tomato Mosaic Virus (ToMV)</li>
-        </ul>
-        <p style="margin-top:1rem;">For years, home gardeners and small growers had very few options when these viruses appeared. Beginning around 2023, new tomato hybrids became available with genetic resistance specifically targeting these devastating diseases.</p>
-        <div class="availability">
-          <strong>The challenge:</strong> These advanced commercial varieties are usually sold only to large-scale growers in lots of 1,000 to 5,000 seeds. That makes them impractical and expensive for home gardeners and small market gardeners. Transplant-ready plants have not been available locally.
-        </div>
-      </section>
+    <div class="pickup"><span class="pin">📍</span>Pick up in Puerto Vallarta. Exact location and details provided when you reserve.</div>
+    <div class="brush" style="height:10px;margin-top:-5px"></div>
 
-      <section>
-        <h2><span class="section-icon">🍅</span>Introducing INKA F1 Hybrid Roma Tomato</h2>
-        <p><em>Indeterminate Hybrid Roma Tomato — Solanum lycopersicum</em><br>
-        Produced by Böden Seed / Cheng Tin S.A. de C.V.</p>
-        <p>The following specifications are provided by the developer of the INKA F1 hybrid.</p>
+    <section class="cards">
+      <article class="card"><div class="card-head"><div class="card-ico">📍</div><h4>First Local<br>Availability</h4></div><img src="assets/bay.jpg" alt=""><p>INKA F1 is the first tomato of its kind available locally in practical quantities for home gardeners and small growers.</p></article>
+      <article class="card"><div class="card-head"><div class="card-ico person">👤</div><h4>Why I Chose to<br>Grow INKA F1</h4></div><img src="assets/tomato-plants.jpg" alt=""><p>My journey to find the best tomato for our climate, our season, and our tables.</p></article>
+      <article class="card"><div class="card-head"><div class="card-ico shield">🛡</div><h4>Why It Performs So<br>Well Here</h4></div><img src="assets/greenhouse-row.jpg" alt=""><p>Heat, humidity, and disease pressure are tough—INKA F1 was bred to excel.</p></article>
+    </section>
 
-        <div class="spec-card">
-          <table>
-            <tr><th>Season</th><td>Extreme heat</td></tr>
-            <tr><th>Maturity</th><td>Early — approximately 70 days after transplant</td></tr>
-            <tr><th>Fruit size</th><td>XL</td></tr>
-            <tr><th>Fruit weight</th><td>210–230 grams each</td></tr>
-            <tr><th>Yield</th><td>280–300 tons/hectare</td></tr>
-            <tr><th>Growth habit</th><td>Indeterminate</td></tr>
-            <tr><th>Flowers per cluster</th><td>~12 flowers, ~10 fruits</td></tr>
-          </table>
-        </div>
-      </section>
+    <section class="experience"><h3>From Seedling to Harvest—The INKA F1 Experience 🌿</h3></section>
+    <section class="gallery">
+      <div class="gal"><img src="assets/seedlings.jpg"><div>Healthy starts</div></div><div class="gal"><img src="assets/potted-plants.jpg"><div>Strong roots</div></div><div class="gal"><img src="assets/vigorous-growth.jpg"><div>Vigorous growth</div></div><div class="gal"><img src="assets/abundant-harvest.jpg"><div>Abundant harvests</div></div><div class="gal"><img src="assets/freshly-picked.jpg"><div>Freshly picked</div></div><div class="gal"><img src="assets/sliced-tomato.jpg"><div>Delicious flavor</div></div>
+    </section>
 
-      <section class="technical">
-        <aside class="image-card">
-          <img src="greenhouse.jpg" alt="INKA F1 greenhouse production">
-          <p>Commercial greenhouse production of INKA F1.</p>
-        </aside>
-        <div class="technical-text">
-          <h2><span class="section-icon">🧬</span>Technical Description from the Plant Breeder</h2>
-          <p><em>The following description comes from the team responsible for the genetic development of the INKA F1 hybrid.</em></p>
-          <p>Extremely vigorous and fast-growing plant with excellent foliage coverage, ideal for long production cycles. Strong root system with high resistance to nematodes. Short internodes with an average of 12 flowers and 10 fruits per cluster.</p>
-          <p>This hybrid is especially suited to hot climates, with genetic potential that allows it to thrive under high temperatures. It produces extra-large, firm fruit with exceptionally thick walls, intense red color, excellent flavor, and excellent shelf life.</p>
-        </div>
-      </section>
-
-      <section>
-        <h2><span class="section-icon">✅</span>Why Choose INKA F1?</h2>
-        <ul class="features">
-          <li>✅ Bred for hot climates and extreme temperatures</li>
-          <li>✅ Early maturity, approximately 70 days</li>
-          <li>✅ XL fruit weighing 210–230 grams each</li>
-          <li>✅ Thick-walled, firm fruit</li>
-          <li>✅ Excellent flavor</li>
-          <li>✅ Vigorous growth and excellent productivity</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2><span class="section-icon">🛡️</span>Disease Resistance</h2>
-        <div class="resistance-grid">
-          <div class="resistance-box">
-            <h3>High Genetic Resistance</h3>
-            <ul>
-              <li>Tomato Spotted Wilt Virus (TSWV)</li>
-              <li>Tomato Mosaic Virus (ToMV)</li>
-              <li>Tomato Yellow Leaf Curl Virus (TYLCV)</li>
-              <li>Fusarium Wilt, races 1, 2, and 3</li>
-              <li>Root-knot nematodes</li>
-              <li>Verticillium Wilt</li>
-            </ul>
-          </div>
-          <div class="resistance-box">
-            <h3>Intermediate Genetic Resistance</h3>
-            <ul>
-              <li>Tomato Brown Rugose Fruit Virus (ToBRFV)</li>
-              <li>Fusarium Crown and Root Rot</li>
-              <li>Leaf Mold</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="about">
-        <h2><span class="section-icon">👨‍🌾</span>Why Am I Offering These?</h2>
-        <p>I am a long-time hobby gardener living in Puerto Vallarta who grows tomatoes in containers and other small spaces. Like many local gardeners, I wanted access to commercial-quality seed that was not available in quantities suitable for home use.</p>
-        <p>Because commercial seed is sold only in large lots, I purchased a commercial quantity and received permission to make the excess available to other gardeners in our community.</p>
-      </section>
-
-      <section>
-        <h2><span class="section-icon">🌱</span>Choose the Best Option for You</h2>
-        <div class="offer-grid">
-          <article class="offer-card">
-            <header><h3>🌱 INKA F1 Seeds</h3></header>
-            <div class="offer-body">
-              <p><strong>100 seeds per packet</strong></p>
-              <div class="price">$260 MXN</div>
-              <div class="best-for">
-                <strong>Best for:</strong>
-                <ul>
-                  <li>Home gardeners</li>
-                  <li>Container growers</li>
-                  <li>Market gardeners</li>
-                  <li>Small commercial growers</li>
-                </ul>
-              </div>
-              <p class="decision-line">Best value for gardeners who enjoy growing from seed.</p>
-              <p>Cash payment upon local pickup. Limited quantity — reserve now.</p>
-            </div>
-          </article>
-
-          <article class="offer-card">
-            <header><h3>🍅 INKA F1 Transplants</h3></header>
-            <div class="offer-body">
-              <p><strong>Minimum order: 5 plants</strong></p>
-              <div class="price">$100 MXN <small>per plant</small></div>
-              <div class="best-for">
-                <strong>Best for:</strong>
-                <ul>
-                  <li>Gardeners who want a head start</li>
-                  <li>Anyone who prefers to skip seed starting</li>
-                  <li>Small growers planning fall planting</li>
-                </ul>
-              </div>
-              <p class="decision-line">Perfect if you want to start with healthy young plants.</p>
-              <p><strong>Available:</strong> Beginning of October, after the rainy season ends.</p>
-              <p>Cash payment due at pickup. Reserve now so I can schedule the 60-day growing period for your plants.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="availability">
-        <strong>Availability note:</strong> Because these seeds come from a commercial lot purchased specifically for this project, availability is limited and reservations will be handled in the order received.
-      </section>
-
-      <section class="cta">
-        <h2>Ready to Grow INKA F1?</h2>
-        <p>Reserve seeds or transplants by email:</p>
-        <p><a href="mailto:Vallarta_Inka_F1_Tomatoes@use.Startmail.com">Vallarta_Inka_F1_Tomatoes@use.Startmail.com</a></p>
-        <p>Include the quantity of seeds or number of transplant plants you would like to reserve.</p>
-      </section>
-
-      <p class="footer-tagline">🍅 Grow the tomatoes you wish you had planted last season. 🍅</p>
-      <p class="source-note">Information based on published specifications provided by Böden Seed / Cheng Tin S.A. de C.V.</p>
-    </main>
+    <section class="bottom-cta"><div class="ready"><img src="assets/tomato-icon.png"><div>Ready to<br>grow better</div></div><span class="tag-wrap imgtag bottom"><a href="mailto:Vallarta_Inka_F1_Tomatoes@use.Startmail.com?subject=Reserve%20INKA%20F1%20Seeds%20or%20Plants&body=Hello%2C%0A%0AI%20would%20like%20to%20reserve%3A%0A%0A%E2%98%90%20INKA%20F1%20Seeds%0A%E2%98%90%20INKA%20F1%20Transplants%0A%0AQuantity%3A%0A%0AName%3A%0APhone/WhatsApp%23%3A%0A%0AThank%20you." aria-label="Reserve INKA F1 seeds or plants"><img class="tagpic tagpic-bottom" src="assets/tag-reserve-all.png" alt="Reserve INKA F1 seeds or plants"></a></span><div class="lets">Let’s grow<br>something special! 🌿</div></section>
   </div>
+  <footer class="footer"><div><img src="assets/tomato-icon.png">Grow Better. Eat Better. Share Better.</div><span>That's the INKA F1 difference.</span><span>Questions? Email me anytime:<br><b>Vallarta_Inka_F1_Tomatoes@use.Startmail.com</b></span></footer>
+</main>
 </body>
 </html>
