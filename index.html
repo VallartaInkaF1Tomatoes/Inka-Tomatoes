@@ -25,6 +25,89 @@
 .bottom-cta .tag-wrap.imgtag{justify-self:start;}
 .tagpic-bottom{width:410px;}
 @media(max-width:760px){.tagpic-all{width:310px}.tagpic-seeds{width:230px}.tagpic-trans{width:250px}.tagpic-bottom{width:310px}.option .tag-wrap.imgtag{left:50%;}}
+
+
+/* Release 1.1 — dedicated phone portrait layout.
+   Desktop/tablet/landscape poster layout above is unchanged. */
+@media (max-width: 760px) and (orientation: portrait){
+  html, body{width:100%;overflow-x:hidden;background:#efe8d7;}
+  .poster{width:100%;max-width:100%;margin:0;background:radial-gradient(circle at 32% 12%,#fffef8 0,#fffaf0 44%,#f8f1de 100%);box-shadow:none;overflow:hidden;}
+  .inner{padding:18px 16px 0;}
+
+  .hero{height:auto;display:flex;flex-direction:column;padding:0;margin:0 0 12px;}
+  .headline{order:1;width:100%;z-index:2;}
+  .headline h1{font-size:30px;line-height:1.04;letter-spacing:-.7px;margin:0 0 10px;}
+  .headline h2{font-size:28px;line-height:1.05;margin:0 0 8px;}
+  .hero-img{order:2;position:relative;right:auto;top:auto;width:calc(100% + 32px);height:220px;margin:0 -16px;background-position:center top;background-size:cover;}
+
+  .benefits{display:grid;grid-template-columns:1fr;gap:15px;margin-top:8px;}
+  .benefit,.benefit.hot,.benefit.disease,.benefit.available{grid-column:auto;grid-row:auto;display:grid;grid-template-columns:72px minmax(0,1fr);gap:12px;min-height:0;margin:0;align-items:center;}
+  .benefit .ico{width:66px;height:66px;object-fit:contain;}
+  .benefit.available .ico{width:70px;height:70px;}
+  .benefit .emoji{font-size:44px;text-align:center;}
+  .benefit.disease .emoji{font-size:42px;}
+  .script{font-size:29px;line-height:.92;}
+  .benefit p{font-size:16px;line-height:1.28;margin:4px 0 0;}
+  .availability{font-size:25px;line-height:.98;margin-top:3px;}
+  .cta-row{grid-column:auto;grid-row:auto;justify-self:center;align-self:center;margin:4px 0 0;width:100%;text-align:center;}
+  .tagpic-all{width:min(355px,94vw);}
+
+  .brush{margin:14px 0 8px;height:16px;}
+  .brush:before{left:12px;right:12px;}
+  .section-title{font-size:25px;line-height:1.15;margin:4px 0 12px;}
+  .section-title .leaf{margin:0 5px;}
+
+  .options{grid-template-columns:1fr;gap:18px;}
+  .option{min-height:0;padding:15px 16px 74px;background:linear-gradient(#fff9dc 0 32%,rgba(255,255,255,.82) 32% 100%);}
+  .option img.prod{right:15px;top:8px;width:134px;height:70px;object-fit:contain;}
+  .option img.pot{width:96px;height:72px;right:18px;top:8px;}
+  .option h3{font-size:28px;margin-bottom:18px;}
+  .option p{font-size:14px;}
+  .price{font-size:24px;}
+  .checks{font-size:13px;line-height:1.35;}
+  .option .tag-wrap.imgtag{bottom:14px;left:50%;transform:translateX(-50%);}
+  .tagpic-seeds{width:min(250px,76vw);}
+  .tagpic-trans{width:min(285px,82vw);}
+
+  .pickup{font-size:24px;line-height:1.05;margin:12px 0 8px;}
+  .pickup .pin{font-size:25px;margin-right:8px;}
+
+  .cards{grid-template-columns:1fr;gap:10px;}
+  .card{min-height:0;padding:9px 10px 10px;}
+  .card-head{grid-template-columns:34px 1fr;}
+  .card h4{font-size:20px;line-height:.95;}
+  .card img{height:98px;}
+  .card p{font-size:12.5px;line-height:1.25;}
+
+  .experience{display:block;text-align:center;margin:16px 0 10px;}
+  .experience:before,.experience:after{display:none;}
+  .experience h3{font-size:28px;line-height:1;white-space:normal;}
+  .gallery{grid-template-columns:1fr;gap:8px;}
+  .gal img{height:92px;object-fit:cover;}
+  .gal div{font-size:15px;margin-top:2px;}
+
+  .bottom-cta{display:grid;grid-template-columns:1fr;justify-items:center;gap:8px;margin:16px 0 13px;}
+  .ready{grid-template-columns:56px auto;justify-content:center;}
+  .ready img{width:54px;}
+  .ready div{font-size:34px;line-height:.86;}
+  .bottom-cta .tag-wrap.imgtag{justify-self:center;}
+  .tagpic-bottom{width:min(350px,94vw);}
+  .lets{font-size:31px;line-height:.95;text-align:center;}
+
+  .footer{height:auto;grid-template-columns:1fr;padding:10px 16px;font-size:12px;gap:7px;text-align:left;}
+  .footer span{border-left:0;padding-left:0;}
+  .footer img{width:20px;}
+}
+
+@media (max-width: 390px) and (orientation: portrait){
+  .headline h1{font-size:27px;}
+  .headline h2{font-size:25px;}
+  .hero-img{height:200px;}
+  .script{font-size:27px;}
+  .availability{font-size:23px;}
+  .section-title{font-size:23px;}
+}
+
 </style>
 </head>
 <body>
